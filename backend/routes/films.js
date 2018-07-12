@@ -1,6 +1,12 @@
+const DataStore = require('./dataStore')
+
 class Films {
+  constructor (dataStore = new DataStore()) {
+    this.dataStore = dataStore
+  }
+
   readFilms () {
-    return 'films'
+    return this.dataStore.get()
   }
 }
 
