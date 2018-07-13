@@ -1,4 +1,4 @@
-const Films = require('../../routes/films.js')
+const Films = require('../../models/films.js')
 
 describe('Films', () => {
   let films
