@@ -21,7 +21,8 @@ class DataStore {
     return data.map((episode) => {
       return {
         name: episode.name,
-        image: episode.image.medium
+        image: episode.image.medium,
+        season: episode.season
       }
     })
   }
