@@ -8,4 +8,9 @@ describe('Films', () => {
     films.readFilms()
     expect(connectionSpy).toHaveBeenCalled()
   })
+
+  it('returns an object from the dataStore', async () => {
+    let expectedOutput = await films.readFilms()
+    expect(typeof expectedOutput).toEqual('object')
+  })
 })
