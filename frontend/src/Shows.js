@@ -11,9 +11,14 @@ class Shows extends Component {
   }
 
   componentDidMount () {
-    fetch('http://localhost:8000/episodes')
+    this._fetchEmails()
+  }
+
+  _fetchEmails () {
+    return fetch('http://localhost:8000/episodes')
     .then(episodes => { return episodes.json() })
     .then(episodes => this.setState({ episodes }))
+    .catch((err) => 'Error: ' + err)
   }
 
   episodes () {

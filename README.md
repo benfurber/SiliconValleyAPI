@@ -19,6 +19,7 @@ Then onto the frontend. While I did research Vue.js, I wasn't convinced I'd be a
 
 I decided to use Semantic UI for basic grid/responsive layout configuration.
 
+**Task to do list:**
 - [x] Github repo
 - [x] Create Express app
 - [x] App stores provided dataset
@@ -29,7 +30,7 @@ I decided to use Semantic UI for basic grid/responsive layout configuration.
 - [x] Web app displays episodes as thumbnail and title
 - [ ] Web app text box can filter by title
 - [x] Unit test as appropriate
-- [x] [Provide views on code snippet](https://github.com/benfurber/SiliconValleyAPI/blob/master/docs/codesnippet.md) 
+- [x] [Provide views on code snippet](https://github.com/benfurber/SiliconValleyAPI/blob/master/docs/codesnippet.md)
 
 ## Installation
 
