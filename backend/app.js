@@ -20,7 +20,7 @@ app.get('/episodes', async (req, res, next) => {
 
 app.get('/episodes/season/:number', async (req, res, next) => {
   let films = new Films()
-  let data = await films.readFilms(req.params.version)
+  let data = await films.readFilms(req.params.number)
   res.status(200).json(data)
 })
 
