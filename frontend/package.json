@@ -1,12 +1,8 @@
 {
-  "name": "SiliconValleyAPI-backend",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Ben Furber",
-  "license": "MIT",
+  "name": "frontend",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node": "^10.6.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
@@ -15,20 +11,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "test": "jest --coverage",
-    "lint": "eslint src/js"
-  },
-  "devDependencies": {
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^5.1.0",
-    "eslint-config-standard": "^11.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "jest": "^23.4.0",
-    "standard": "^11.0.1"
+    "eject": "react-scripts eject"
   }
 }
