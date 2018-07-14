@@ -5,8 +5,16 @@ class Films {
     this.dataStore = dataStore
   }
 
-  readFilms () {
-    return this.dataStore.get()
+  readFilms (number = 0) {
+    let allEpisodes = this.dataStore.get()
+    if (number > 0) {
+      return this._filterResults(allEpisodes, number)
+    }
+    return allEpisodes
+  }
+
+  _filterResults (allEpisodes, number) {
+    return allEpisodes.filter(episode => episode.season === number)
   }
 }
 
