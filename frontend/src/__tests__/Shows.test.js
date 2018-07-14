@@ -1,9 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import Enzyme, { mount } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
 import Shows from '../Shows';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<Shows />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+Enzyme.configure({adapter: new Adapter()})
+
+describe('<Shows />', () => {
+  let shows
+  let eposideOne
+  let episodes
+
+  beforeEach(() => {
+    eposideOne = {
+      "name": "Minimum Viable Product",
+      "image": "http://static.tvmaze.com/uploads/images/medium_landscape/49/123633.jpg",
+      "season": 1
+    }
+    shows = mount(<Shows/>)
+    shows.setState({ episodes: [eposideOne] })
+  })
+
+  it('props prepare eposides', () => {
+    expect(shows.text()).toContain(eposideOne.name)
+  })
+})
