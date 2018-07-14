@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Card } from 'semantic-ui-react'
+import Episode from './Episode'
 
 class Shows extends Component {
   constructor (props) {
@@ -20,12 +22,14 @@ class Shows extends Component {
 
   render() {
     let episodes = this.episodes().map((episode, index) => {
-      return <div key={index}>{episode.name}</div>
+      return <Episode key={index} details={episode} />
     })
 
     return (
       <div className="Shows">
-        {episodes}
+        <Card.Group>
+          {episodes}
+        </Card.Group>
       </div>
     );
   }
