@@ -16,11 +16,21 @@ describe('<Shows />', () => {
       "image": "http://static.tvmaze.com/uploads/images/medium_landscape/49/123633.jpg",
       "season": 1
     }
-    shows = mount(<Shows/>)
+    shows = mount(<Shows />)
     shows.setState({ episodes: [eposideOne] })
   })
 
   it('props prepare eposides', () => {
     expect(shows.text()).toContain(eposideOne.name)
   })
+
+  it('Input field filters the results', () => {
+    const userInput = 'the'
+    const input = shows.find('input')
+
+    input.simulate('change', { target: { value: userInput } })
+
+    expect(shows.text()).not.toContain(eposideOne.name)
+  })
+
 })
