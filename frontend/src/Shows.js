@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card } from 'semantic-ui-react'
+import { Card, Container, Divider, Form, Segment } from 'semantic-ui-react'
 import Episode from './Episode'
 
 class Shows extends Component {
@@ -46,18 +46,24 @@ class Shows extends Component {
     })
 
     return (
-      <div className="Shows">
-        <form>
-          <label>Search Episode Title: </label>
-          <input type="text" value={this.state.nameFilter} onChange={this.handleChange} />
-        </form>
+      <Container className='Shows' textAlign='center'>
+        <Divider hidden />
 
-        <br/>
+        <Segment inverted color='blue'>
+          <Form inverted>
+            <Form.Field inline>
+              <label>Search Episode Title: </label>
+              <input type='text' value={this.state.nameFilter} onChange={this.handleChange} />
+            </Form.Field>
+          </Form>
+        </Segment>
 
-        <Card.Group>
+        <Divider hidden />
+
+        <Card.Group centered>
           {episodes}
         </Card.Group>
-      </div>
+      </Container>
     );
   }
 }
