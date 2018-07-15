@@ -24,11 +24,11 @@ I decided to use Semantic UI for basic grid/responsive layout configuration.
 - [x] Create Express app
 - [x] App stores provided dataset
 - [x] App serves dataset to frontend
-- [ ] App allows filtering by season
+- [x] App allows filtering by season
 - [x] Create web app
 - [x] Web app makes API requests to the backend
 - [x] Web app displays episodes as thumbnail and title
-- [ ] Web app text box can filter by title
+- [x] Web app text box can filter by title
 - [x] Unit test as appropriate
 - [x] [Provide views on code snippet](https://github.com/benfurber/SiliconValleyAPI/blob/master/docs/codesnippet.md)
 
