@@ -1,13 +1,13 @@
 # Silicon Valley API
 
-![Screenshot of the frontend](https://github.com/benfurber/SiliconValleyAPI/blob/master/docs/screenshot.png "Screenshot of the frontend")
+![Screenshot of the frontend](https://github.com/benfurber/SiliconValleyAPI/blob/further-work/docs/screenshot.png "Screenshot of the frontend")
 
 A backend and frontend for presenting episodes of Silicon Valley.
 
 ## Task
 My task was to build a simple API (using episodes of Silicon Valley as the dataset) and a frontend to call that API and present the data.
 
-I started by [producing a digram](https://github.com/benfurber/SiliconValleyAPI/blob/master/docs/workflow.png) of how I expected I needed the platform to work.
+I started by [producing a digram](https://github.com/benfurber/SiliconValleyAPI/blob/further-work/docs/workflow.png) of how I expected I needed the platform to work.
 
 After installing/setting up a basic Express server, I started building the data model. I considered and investigated different ways of storing the JSON file I was provided, this included a look and play with Redis. As how to choose to store the data didn't seem central to the task I decided not to use any database and just parse the file on memory as and when required by the other objects.
 
