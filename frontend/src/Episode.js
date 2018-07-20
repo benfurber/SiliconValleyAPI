@@ -9,6 +9,9 @@ class Episode extends Component {
         <Card.Content>
           <Card.Header>{this.props.details.name}</Card.Header>
         </Card.Content>
+        <Card.Content>
+          Season: {this.props.details.season}. Episode: {this.props.details.episode}. 
+        </Card.Content>
       </Card>
     )
   }

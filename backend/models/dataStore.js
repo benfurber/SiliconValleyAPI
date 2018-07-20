@@ -22,7 +22,8 @@ class DataStore {
       return {
         name: episode.name,
         image: episode.image.medium,
-        season: episode.season
+        season: episode.season,
+        episode: episode.number
       }
     })
   }

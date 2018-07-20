@@ -60,7 +60,8 @@ exports.inviteUser = function(req, res) {
 ### How might you refactor this code?
 
 **Make it easier to read**
-* Turn it into a class object with separate concerns based on invitationResponse
+* Turn it into a class object with separate concerns
+* Different scenarios for each invitationResponse status
 
 **Increase code reuse**
 * Methods/functions based on invitationResponse
@@ -68,6 +69,7 @@ exports.inviteUser = function(req, res) {
 
 **Improve the testability**
 * Individual/separate/short functions with injected dependencies will make testing a lot easier
+* Providing superagent as a dependency inject would mean it could be mocked easily
 
 **Minimize unhandled exceptions**
 * Lead with the error handling. They seem to be last?
